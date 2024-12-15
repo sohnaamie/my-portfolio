@@ -7,6 +7,30 @@ background-color: #f4f4f4;
     color: #333;
     
 }
+  /* Styles for tablet devices */
+@media (max-width: 768px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    }
+    body{
+        font-size: 14px; 
+    }
+   
+}
+
+    /* Styles for mobile devices */
+    @media (max-width: 480px) {
+        .container {
+          grid-template-columns: 1fr; /* 1 column on mobile */
+        }
+        body {
+            font-size: 12px; /* Even smaller font on mobile */
+            padding: 10px;
+        }
+    }
+       
+
+
 
 .container {
     width: 80%;
